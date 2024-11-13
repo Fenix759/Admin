@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Parte de arriba */
+header{
+    background-color: rgb(61, 177, 31);
+    display: flex;
+    justify-content: space-between;
+}
+button{  
+    /* Permite ajustar comodamente todos los botones */
+    background: 0;
+    border: 0;
+    cursor: pointer;
+}
+.Abrir-Nav{
+    font-size: 30px;
+    padding: 2rem;
+    color: #e1e1e1;
+}
+
+.Logo{
+    font-weight: 900;
+    color: #fcfcfc;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+@media screen and (  max-width: 850px) {
+    .Logo{
+        font-weight: 900;
+        color: #fcfcfc;
+        font-size: 0.8rem;
+        padding: 2rem;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(61, 177, 31);
+        padding: 2rem;
+        border-right: 2px solid #ffffff;
+        display: none;  
+        box-shadow: 0 0 0 200vmax rgba(110, 110, 110, 0.185);
+    }
+}
+
+/* Barra de navegacion */
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(61, 177, 31);
+    padding: 2rem;
+    border-right: 2px solid #ffffff;
+    display: none;  
+}
+
+.Cerrar-Nav{
+    font-size: 30px;
+    color: #e1e1e1;
+}
+li a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1.5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+.visible{
+    display: block;
+}
+/* Contenido Principal */
+.nav2{
+    /* Este nav hace que hace que el nav no se superponga al contenido */
+    position: static;
+    padding-bottom: 55cqmax;
+    padding-right: 1.5rem;
+}
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: ". ."; 
+}
+/* Seccion dedicada a los ambientes */
+.panela{
+    margin: 2rem;
+}
+.ubicacion-bloques{
+    display: flex; gap: 4rem;
+}
+.texto{
+    font-size: 3.5rem;
+}
+    /* Para ajustar el tañao de los divs con el de las "a" */
+    .Bloques{
+        padding: 3.5rem 0rem 3.5rem 0rem;
+        background-color: rgb(133, 214, 67);
+        border: 2px solid green;
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+    .Bloques2{
+        padding: 3.5rem 3.5rem 3.5rem 3.5rem;
+        background-color: rgb(133, 214, 67);
+        color: #fcfcfc;
+    }
+
+@media screen and (  max-width: 850px) {
+    .texto{
+        font-size: 1.8rem;
+    }
+    .ubicacion-bloques{
+        display: flex; gap: 2rem;
+    }
+      
+        .Bloques{
+            padding: 1.3rem 0rem 1.3rem 0rem;
+            background-color: rgb(133, 214, 67);
+            border: 2px solid green;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        .Bloques2{
+            padding: 1.3rem 1.3rem 1.3rem 1.3rem;
+            background-color: rgb(133, 214, 67);
+            color: #fcfcfc;
+        }
+}
+/* Seccion dedicada a los ambientes */
+.ubicacion-ambientes{ 
+    display: flex;
+    gap: 4rem;
+}
+.Seccion-Ambientes{
+    list-style-type: disc; 
+    display: inline-block;
+    font-size: 2.5rem;
+    border-bottom: 2px solid green;
+    padding: 1rem;
+}
+    /* Para ajustar el tañao de los divs con el de las "a" */
+    .Ambientes{
+        background-color: rgb(133, 214, 67);
+        border: 2px solid green;
+        color: #fcfcfc;
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 2rem;
+    }
+    .Ambientes2{
+        background-color: rgb(133, 214, 67);
+        color: #fcfcfc;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+@media screen and (  max-width: 850px) {
+    .ubicacion-ambientes{ 
+        display: flex;
+        gap: 1rem;
+    }
+    .Seccion-Ambientes{
+        list-style-type: disc; 
+        display: inline-block;
+        font-size: 1.3rem;
+        border-bottom: 2px solid green;
+        padding: 0.5rem;
+    }
+        /* Para ajustar el tañao de los divs con el de las "a" */
+        .Ambientes{
+            background-color: rgb(133, 214, 67);
+            border: 2px solid green;
+            color: #fcfcfc;
+            padding: 0.2rem 0rem 0.2rem 0rem;
+            font-size: 1rem;
+        }
+        .Ambientes2{
+            background-color: rgb(133, 214, 67);
+            color: #fcfcfc;
+            padding: 0.2rem;
+            font-size: 1rem;
+        }
+}
