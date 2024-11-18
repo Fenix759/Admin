@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Parte de arriba */
+header{
+    background-color: rgb(20, 175, 59); 
+    display: flex;
+    justify-content: space-between;
+}
+button{  
+    /* Permite ajustar comodamente todos los botones */
+    background: 0;
+    border: 0;
+    cursor: pointer;
+}
+.Abrir-Nav{
+    font-size: 30px;
+    padding: 2rem;
+    color: #e1e1e1;
+}
+
+.Logo{
+    font-weight: 900;
+    color: #fcfcfc;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+@media screen and (  max-width: 780px) {
+    .Abrir-Nav{
+        font-size: 30px;
+        padding: 1rem;
+        color: #e1e1e1;
+    }
+    .Logo{
+        font-weight: 900;
+        color: #fcfcfc;
+        font-size: 1rem;
+        margin-top: 2px;
+        padding: 1rem;
+    }
+}
+
+/* Barra de navegacion */
+
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(20, 175, 59); 
+    border-right: 2px solid #ffffff;
+    display: none;
+    box-shadow: 0 0 0 200vmax rgba(110, 110, 110, 0.664);
+    transition: left 0.5s; /* Suaviza la transición */
+}
+  /* Contenido Nav */
+.Cerrar-Nav{
+    font-size: 25px; color: #e1e1e1; 
+    padding: 1.5rem; 
+    transition: transform 0.3s ease; 
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+    .Cerrar-Nav:hover{
+        transform: scale(1.4);
+    }
+
+
+ ul li a{
+    display: flex; 
+    flex-direction: column; 
+    color: aliceblue;
+    border-bottom: solid white;
+    padding: 1.5rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+  ul li a:hover{
+        display: flex;
+        flex-direction: column;
+        transform: scaleY(1.2);
+        color: aliceblue;
+        font-weight: 600;
+    }
+
+@media screen and (  max-width: 780px) {
+    nav{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(20, 175, 59); 
+        border-right: 2px solid #ffffff;
+        display: none;  
+    }
+}
+        /* Este hace la magia del nav */
+        .visible {
+            display: block;
+            animation: slideIn 0.5s forwards;
+        }
+
+/* Contenido Principal */
+
+.contenido{
+    margin: 3rem;
+}
+    /* Seleccionar bloque */
+    .Bloque{
+        padding: 1rem;
+        background-color: #ffffff;
+        border-bottom: solid #009113;
+        color: #000000;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: transform 0.3s ease;
+    }
+    .Bloque:hover{
+        border-bottom: 2px solid rgb(54, 211, 54);
+        transform: scale(1.02);
+    }
+    .seleccionar-bloque{
+        background-color: rgb(55, 206, 93);
+        color: #fcfcfc;
+        border-bottom: 2px solid rgb(54, 211, 54);
+    }
+    .spawn-amb{
+        display: block;
+    }
+
+@media screen and (  max-width: 780px) {
+    .contenido{
+        margin: 2rem;
+    }
+    
+    .Bloque{
+        padding: 0.5rem;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 1rem;
+        font-weight: 600;   
+        transition: transform 0.3s ease;
+    }
+
+    .seleccionar-bloque{
+        background-color: rgb(55, 206, 93);
+        color: #fcfcfc;
+    }
+
+}
+
+/* Seccion dedicada a los ambientes */
+    .Ambientes{
+        display: none;
+    }
+    .spawn-amb{
+        display: block;
+    }
+    .ubicacion-ambientes{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        margin: 2rem;
+        margin-left: 0;
+        gap: 3rem;       
+    }
+
+    /* Para ajustar el tañao de los divs con el de las "a" */
+        .Ambiente{
+            background-color: rgb(55, 206, 93);   
+            border: 2px solid rgb(0, 190, 0);
+            color: #fcfcfc;
+            padding: 1rem 0rem 1rem 0rem;
+            font-size: 1rem;
+        }
+        .Ambiente2{
+            background-color: rgb(55, 206, 93);            
+            color: #fcfcfc;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+
+
+
+
